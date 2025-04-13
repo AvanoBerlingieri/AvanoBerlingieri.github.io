@@ -1,8 +1,147 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin: 6rem;
+    }
+
+    .about-container {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav {
         display: flex;
     }
+
+    #profile, .section-container {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section, .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .section_pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-container {
+        margin-top: 0;
+    }
+
+    .project-title {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .h1-title {
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #contact {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 40vh;
+    }
+
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+
+    .about-container, .contact-info-upper-container, .btn_container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+
+    .contact-info-container p, .nav-links li a {
+        font-size: 1.25rem;
+    }
+
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .section_pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .section_text_p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .text-container {
+        text-align: justify;
+    }
+
+    .project-title {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center; /* centers children horizontally */
+        text-align: center; /* centers text inside child elements */
+    }
+
+    .skills-container > div {
+        margin-bottom: 1rem; /* optional spacing between items */
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
 }
