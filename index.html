@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+</head>
+<body>
+
+<nav id="desktop-nav">
+    <div class="logo">Avano Berlingieri</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav id="hamburger-nav">
+    <div class="logo">Avano Berlingieri</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="section_pic-container">
+        <img class="profile_pic" src="assets/placeholder-profile.jpg" alt="profile picture">
+    </div>
+
+    <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <p class="title">Avano Berlingieri</p>
+        <p class="section_text_p2">Software Developer</p>
+        <div class="btn_container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="social-container">
+            <img src="assets/linkedin.png" alt="linkedin profile picture" class="icon"
+                 onclick="window.open('https://www.linkedin.com/in/avano-berlingieri-9121782b3/')">
+            <img src="assets/github.png" alt="linkedin profile picture" class="icon"
+                 onclick="window.open('https://github.com/AvanoBerlingieri')">
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="detail-container">
+                    <img src="assets/experience.png" alt="Experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p>2+ years <br> Frontend Developer</p>
+                </div>
+                <div class="detail-container">
+                        <img src="assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Ontario Advance Diploma - <br>Computer Programming and Analysis</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur corporis culpa
+                    delectus, ea eveniet hic in ipsam molestiae, nostrum perferendis sunt voluptas. Ad aperiam
+                    delectus deserunt dolor doloribus ex expedita facilis id impedit mollitia nam nobis, numquam
+                    odio officiis omnis perferendis quam quibusdam quidem, tempora veniam voluptatem voluptates
+                    voluptatibus.</p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="window.location.href='#projects'">
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
